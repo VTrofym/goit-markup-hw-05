@@ -18,7 +18,7 @@
             <a href="./index.html" class="logo"><span class="logo-blue">Web</span><span class="logo-black">Studio</span></a>
             <nav class="block-nav">
                 <ul class="site-nav">
-                    <li><a href="./index.html" class="link studiya first">Студия</a></li>
+                    <li class="header-relative"><a href="./index.html" class="link studiya first">Студия</li>
                     <li class="link-pf-main"><a href="./portfolio.html" class="link portfolio portfolio-head">Портфолио</a></li>
                     <li><a href="#" class="link contacts">Контакты</a></li>
                 </ul>
@@ -41,9 +41,35 @@
     <main>
             <!--Блок Заголовок-->
         <section class="block-title">
+            
             <h1 class="hero">ЭФФЕКТИВНЫЕ РЕШЕНИЯ ДЛЯ ВАШЕГО БИЗНЕСА</h1>
-            <button class="button-main" type="button">Заказать услугу</button>
+            <button data-modal-open class="button-main" type="button">Заказать услугу</button>
+
+            <div data-modal class="backdrop is-hidden">
+                <div class="modal">
+                    <button data-modal-close class="button-modal">
+                        <svg width="11px" height="11px" class="modal-close">
+                            <use href="./images/svg/sprite.svg#icon-xvector"></use>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+
         </section>
+
+        <!-- <button data-modal-open>Открыть модальное окно</button>
+
+            <div class="backdrop is-hidden" data-modal>
+                <div class="modal">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero temporibus odit rerum, nihil adipisci consectetur ex perferendis ullam nemo et harum voluptatem architecto dolorum minima deserunt molestias magnam. Laboriosam, nobis officia! Molestiae, culpa totam quasi maxime fuga perspiciatis accusantium eaque excepturi aperiam harum dolores voluptas. Nemo similique quos porro dolor voluptatum quae, cupiditate doloribus provident.</p>
+                    <button data-modal-close>Закрыть</button>
+                </div>
+            </div> -->
+
+            
+
+
+
             <!-- акценты в работе -->
         <section class="for-business">
             <div class="container">
@@ -93,9 +119,24 @@
             <div class="container">
                 <h2 class="title-s2">Чем мы занимаемся</h2>
                 <ul class="list-s2">
-                    <li class="li-work"><img src="./images/main-jpg-squoosh/box1.jpg" alt="рабочий стол листом А4" width="370"></li>
-                    <li class="li-work li-work-2"><img src="./images/main-jpg-squoosh/box2.jpg" alt="телефон в руке и на мониторе" width="370"></li>
-                    <li class="li-work"><img src="./images/main-jpg-squoosh/box3.jpg" alt="цветовая раскладка на планшете" width="370"></li>
+                    <li class="li-work">
+                            <img src="./images/main-jpg-squoosh/box1.jpg" alt="рабочий стол листом А4" width="370">
+                            <div class="desktop-div">
+                                <p>Десктопные приложения</p>
+                            </div>
+                    </li>
+                    <li class="li-work li-work-2">
+                        <img src="./images/main-jpg-squoosh/box2.jpg" alt="телефон в руке и на мониторе" width="370">
+                    <div class="desktop-div">
+                        <p>Мобильные приложения</p>
+                    </div>
+                    </li>
+                    <li class="li-work">
+                        <img src="./images/main-jpg-squoosh/box3.jpg" alt="цветовая раскладка на планшете" width="370">
+                    <div class="desktop-div">
+                        <p>Дизайнерские решения</p>
+                    </div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -355,6 +396,6 @@
     </ul>
 </div> -->
 
-
+<script src="./js/modal.js"></script>
 </body>
 </html>
