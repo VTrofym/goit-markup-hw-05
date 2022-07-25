@@ -609,14 +609,6 @@ fill: var(--font-сolor-white);
 
 /* --------Постоянные клиенты---------- */
 
-.container.footer {
-    display: flex;
-}
-
-.footer-logo-adress {
-    margin-right: 70px;
-}
-
 .clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -634,21 +626,22 @@ fill: var(--font-сolor-white);
     color: var(--font-сolor-black-other);
 }
 
-
+.main-clients-li {
+    
+}
 
 .main-clients-list {
     margin-top: 0;
     margin-bottom: 0;
     display: flex;
     justify-content: space-between;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
 .main-clients-link:hover .name-company,
 .main-clients-link:focus .name-company {
     fill: var(--font-сolor-blue);
-    
+    transition: 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
     
 
@@ -661,7 +654,6 @@ fill: var(--font-сolor-white);
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .main-clients-link:hover,
@@ -689,6 +681,14 @@ fill: var(--font-сolor-white);
     outline: 1px solid tomato;
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.container.footer {
+    display: flex;
+}
+
+.footer-logo-adress {
+    margin-right: 70px;
 }
 
 .location {
